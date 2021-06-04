@@ -208,6 +208,19 @@ PATH_TO_LABELS = os.path.join("data", "mscoco_label_map.pbtxt")
 
 NUM_CLASSES = 90
 
+from streamlit_webrtc import (
+    AudioProcessorBase,
+    ClientSettings,
+    VideoProcessorBase,
+    WebRtcMode,
+    webrtc_streamer,
+)
+
+WEBRTC_CLIENT_SETTINGS = ClientSettings(
+    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+    media_stream_constraints={"video": True, "audio": True},
+)
+
 
 def t2s(command):
     # Initialize the engine
