@@ -301,7 +301,7 @@ run = st.checkbox("Run", key='checkbox')
 # FRAME_WINDOW = st.image([])
 
 
-class VideoTransformer():
+class VideoTransformer(VideoProcessorBase):
      def transform(self, frame):
         with detection_graph.as_default():
             with tf.Session(graph=detection_graph) as sess:
