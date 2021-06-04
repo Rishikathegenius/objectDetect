@@ -187,8 +187,7 @@ import speech_recognition as sr
 
 r = sr.Recognizer()
 
-cap = cv2.VideoCapture(
-    0)  # if you have multiple webcams change the value to the correct one
+#cap = cv2.VideoCapture(0)  # if you have multiple webcams change the value to the correct one
 
 # Any model exported using the `export_inference_graph.py` tool can be loaded here simply by changing `PATH_TO_CKPT` to point to a new .pb file.
 #
