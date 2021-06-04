@@ -349,6 +349,4 @@ class VideoTransformer(VideoTransformerBase):
                 #     cv2.destroyAllWindows()
                 #     break
                 return image_np
-
-
-         webrtc_streamer(key="helloworld", video_transformer_factory=VideoTransformer)
+webrtc_streamer(key="helloworld", video_transformer_factory=VideoTransformer)
