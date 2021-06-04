@@ -348,7 +348,7 @@ class VideoTransformer(VideoTransformerBase):
                 # if cv2.waitKey(25) & 0xFF == ord('q'):
                 #     cv2.destroyAllWindows()
                 #     break
-                 return image_np
+                return image_np
 
 
          webrtc_streamer(key="helloworld", video_transformer_factory=VideoTransformer)
